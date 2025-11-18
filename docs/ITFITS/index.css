@@ -1,0 +1,100 @@
+  
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #000000;
+            text-align: center;
+        }
+        header {
+            background-color: #000000a4;
+            color: white;
+            padding: 20px;
+            font-size: 5rem;
+        }
+        h1 {
+            margin: 0;
+        }
+        .description {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+            font-size: 50px;
+        }
+        .buttons {
+            margin: 20px auto;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            background-color:  #000000a4;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            border: none;
+            font-size: 50px;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #ffffff48;
+            color:  black;
+            border-radius: none;
+            cursor: pointer;
+        }
+        footer {
+            margin-top: 40px;
+            padding: 10px;
+            background-color:  #000000a4;
+            color: white;
+            font-size: 2rem
+        }
+        .images{
+            display: block;
+            width: 200px;
+        }
+/* BUTTON  TO FORM */
+#form{
+    background-color:  #000000a4;
+    font-size: 65px;
+     color: white;
+     border: none;
+   border-radius: 19px;
+   padding: 10px;
+}
+#form:hover{
+     background-color: #ffffff48;
+    color:  black;
+    border-radius: none;
+     border-radius: none;
+    cursor: pointer;
+
+}
+
+/*IMAGE SLIDER*/ 
+#images {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider-track {
+  display: flex;
+  width: calc(400px * 6); /* 6 images total */
+  animation: slideRight 30s linear infinite;
+}
+
+.slider-track img {
+  flex-shrink: 0;
+  width: 300px;
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
